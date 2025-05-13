@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Wafiqah's Portofolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Pinyon+Script&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="img/IMG_7510.PNG" alt="Logo" class="logo-img">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+<section class="blog-preview">
+  <div class="blog-preview-content-wrapper">
+    
+    <div class="blog-preview-content slide active">
+      <div class="blog-text">
+        <div class="blog-navigation">
+          <button class="nav-arrow left-arrow" onclick="prevSlide()">&#8592;</button>
+          <button class="nav-arrow right-arrow" onclick="nextSlide()">&#8594;</button>
+        </div>
+        <div class="blog-category">FEATURED</div>
+        <h1 class="blog-title">The Only 5 Skincare Steps You Actually Need</h1>
+        <p class="blog-description">Streamline your skincare routine with five essential steps for healthy, radiant skin. From cleansing to sun protection, focus on what truly matters for a glowing complexion every day.</p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+      </div>
+      <div class="blog-image-container">
+        <img src="img/Skincare-Routine_ Diese Produkte brauchst du wirklich.jpg" alt="Skincare Blog Preview" class="blog-image">
+      </div>
+    </div>
+
+    <div class="blog-preview-content slide">
+      <div class="blog-text">
+        <div class="blog-navigation">
+          <button class="nav-arrow left-arrow" onclick="prevSlide()">&#8592;</button>
+          <button class="nav-arrow right-arrow" onclick="nextSlide()">&#8594;</button>
+        </div>
+        <div class="blog-category">NEW</div>
+        <h1 class="blog-title">Unlock Your Inner Royalty With Mia Thermopolis From “The Princess Diaries</h1>
+        <p class="blog-description">Discover your inner royalty with Mia Thermopolis from The Princess Diaries. Confidence, class, and a crown just like Genovia’s finest! </p>
+        <a href="#" class="read-more-btn">READ MORE</a>
+      </div>
+      <div class="blog-image-container">
+        <img src="img/download (29).jpg" alt="Simple Skincare" class="blog-image">
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Inisialisasi pertama kali
+  showSlide(currentSlide);
+</script>
+
+<section class="category-section">
+    <div class="category-divider"></div>
+
+    <div class="category-container">
+      <div class="category-text">
+        <p class="category-label">CATEGORIES</p>
+        <h2 class="category-title">Dive into<br>Her New Era</h2>
+      </div>
+      <div class="category-cards">
+        <div class="category-card">
+          <img src="img/2023 Planners _ Maxie Elise.jpg" alt="Tips & Tricks">
+          <p class="card-label">Tips & Tricks</p>
+        </div>
+        <div class="category-card">
+          <img src="img/chic fashion.jpg" alt="Self Growth">
+          <p class="card-label">Self Growth</p>
+        </div>
+        <div class="category-card">
+          <img src="img/Charlotte Tilbury Makeup and Skincare Collection.jpg" alt="Beauty & Style">
+          <p class="card-label">Beauty & Style</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-divider"></div>
+  </section>
+
+<section class="blog-section2">
+  <div class="blog-container2">
+    <div class="blog-label2">TRENDING NOW</div>
+    <div class="blog-header-row2">
+      <h2 class="blog-title3">Stay Ahead with <br> Our Freshest Insights</h2>
+      <button class="blog-button2">SEE MORE</button>
+    </div>
+  </div>
+</section>
+
+<div class="blog-card-container2">
+  <section class="blog-card-container2">
+    <!-- Kartu 1 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode1.jpg" alt="Elle Woods" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Tips & Tricks</div>
+      <h3 class="blog-episode2">Episode 1</h3>
+      <p class="blog-title2">
+        HOW TO STUDY LIKE ELLE WOODS FROM “LEGALLY BLONDE”
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+  <!-- Kartu 2 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode2.PNG" alt="Mia Thermopolis" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Beauty & Style</div>
+      <h3 class="blog-episode2">Episode 2</h3>
+      <p class="blog-title2">
+        UNLOCK YOUR INNER ROYALTY WITH MIA THERMOPOLIS FROM "THE PRINCESS DIARIES"
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 3 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode3.jpg" alt="Jo March" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Self Growth</div>
+      <h3 class="blog-episode2">Episode 3</h3>
+      <p class="blog-title2">
+        THINK LIKE JO MARCH AND REWRITE YOUR OWN STORY
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<div class="blog-card-container2">
+  <section class="blog-card-container2">
+  <!-- Kartu 4 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode4.PNG" alt="Fashion Icon" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Self Growth</div>
+      <h3 class="blog-episode2">Episode 4</h3>
+      <p class="blog-title2">
+        WHAT TIME DO AFFIRMATIONS WORK BEST ?
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 5 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode5.PNG" alt="Health & Wellness" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Tips & Tricks</div>
+      <h3 class="blog-episode2">Episode 5</h3>
+      <p class="blog-title2">
+        THE BEST DRINK FOR GLOWING SKIN + HEALTHY SKIN TIPS
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kartu 6 -->
+  <div class="blog-card2">
+    <div class="blog-card-header2">
+      <img src="img/episode6.PNG" alt="Mindfulness" />
+    </div>
+    <div class="blog-card-content2">
+      <div class="blog-category2">Tips & Tricks</div>
+      <h3 class="blog-episode2">Episode 6</h3>
+      <p class="blog-title2">
+        FREE FUN FASHION THINGS TO DO BESIDES SHOP
+      </p>
+      <div class="blog-footer2">
+        <span>Happy Wafiqah</span>
+        <span>5min read</span>
+        <span>→</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<section class="subscribe-section">
+    <div class="subscribe-container">
+        <div class="subscribe-box">
+            <div class="subscribe-content">
+                <div class="blog-category1">Subscription</div>
+                <h2 class="blog-title1">Stay Inspired, Stay Empowered</h2>
+                <p class="subscribe-description">Join our exclusive community! Get the latest lifestyle tips, self-growth insights, and tricks to elevate your daily life. Subscribe now and be part of a space that celebrates you!</p>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Email Address" class="email-input" />
+                    <button class="subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+            <div class="subscribe-image">
+                <img src="img/Friendship 🫶🏻.jpg" alt="Community" />
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+<footer class="footer">
+  <div class="footer-content">
+      <p class="copyright">All right Reserved<br>Happy Wafiqah Akmal</p>
+      <div class="social-links">
+          <a href="#" class="social-link">GitHub</a>
+          <a href="#" class="social-link">Gmail</a>
+          <a href="#" class="social-link">Instagram</a>
+      </div>
+  </div>
+</footer>
+
+
+
