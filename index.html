@@ -9,14 +9,14 @@
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav id= "navbar" class="navbar">
     <div class="navbar-logo">
       <img src="img/IMG_7510.PNG" alt="Logo" class="logo-img">
     </div>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
-      <a href="portofolio.html">Portofolio</a>
+      <a href="portofolio.html">Portfolio</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -36,28 +36,28 @@
       <p class="intro-text">
         I am a passionate Graphic Designer, currently in my fourth semester of studying Digital Business at Makassar State University. I specialize in branding, UI design, logo design, and social media content creation. With a keen eye for aesthetics and functionality, I craft visually compelling designs that elevate brands and create meaningful digital experiences. Feel free to explore my portfolio to see my work. If you're looking for a designer to bring your vision to life, let's connect!
       </p>
-      <button href="about.html" class="cta-button">GET TO KNOW ME</button>
+     <button type="button" class="cta-button" onclick="location.href='about.html'">GET TO KNOW ME</button>
     </div>
   </section>
 
   <section class="featured-section">
     <h2 class="featured-title">Featured Project</h2>
-    <button class="see-work-btn">SEE MY WORK</button>
+    <button class="see-work-btn" onclick="location.href='portofolio.html'">SEE MY WORK</button>
     
     <div class="featured-grid">
       <div class="featured-card">
-        <img src="img/wishfolks'.jpg" alt="Project Group" class="featured-image">
+        <img src="img/IMG_8060.PNG" alt="Project Group" class="featured-image">
         <p class="featured-caption">project group</p>
       </div>
       
       <div class="featured-card">
-        <img src="img/rhode1.jpg" alt="Brand Design" class="featured-image">
-        <img src="img/rhode2.jpg" alt="Brand Design" class="featured-image">
+        <img src="img/IMG_8063.PNG" alt="Brand Design" class="featured-image">
+        <img src="img/IMG_8062.PNG" alt="Brand Design" class="featured-image">
         <p class="featured-caption">brand design</p>
       </div>
       
       <div class="featured-card">
-        <img src="img/IMG_7529.PNG" alt="Printed Design" class="featured-image">
+        <img src="img/IMG_8061.PNG" alt="Printed Design" class="featured-image">
         <p class="featured-caption">printed</p>
       </div>
     </div>
@@ -70,7 +70,7 @@
 
   <div class="episodes-container">
     <!-- Episode 1 -->
-    <a href="#episode1" class="episode-card">
+    <a href="blogepisode1.html" class="episode-card">
       <div class="card-image" style="background-image: url('img/episode1.jpg');"></div>
       <div class="card-info">
         <div class="category">Tips & Tricks</div>
@@ -80,7 +80,7 @@
     </a>
 
     <!-- Episode 2 -->
-    <a href="#episode2" class="episode-card">
+    <a href="blogepisode2.html" class="episode-card">
       <div class="card-image" style="background-image: url('img/episode2.PNG');"></div>
       <div class="card-info">
         <div class="category">Beauty & Style</div>
@@ -90,7 +90,7 @@
     </a>
 
     <!-- Episode 3 -->
-    <a href="#episode3" class="episode-card">
+    <a href="blogepisode3.html" class="episode-card">
       <div class="card-image" style="background-image: url('img/episode3.jpg');"></div>
       <div class="card-info">
         <div class="category">Self Growth</div>
@@ -119,16 +119,24 @@
       <p class="secret-recipe-text">
           Think of me as your fairy godmother of social media design, turning your brand, business, or organization into a colorful, eye-catching presence that grabs all the right attention. Your superpower is your uniqueness, and mine is capturing it and transforming it into vibrant designs. Let's make your online presence unforgettable!
       </p>
-      <button class="lets-do-this">LET'S DO THIS THING</button>
+      <button class="lets-do-this" onclick="location.href='contact.html'">LET'S DO THIS THING</button>
   </div>
 </section>
+
+<a id="top"></a>
+  <!-- Tombol scroll ke atas -->
+  <a href="index.html" class="scroll-to-top" title="Kembali ke atas">↑</a>
+
+</body>
+</html>
+
 <footer class="footer">
   <div class="footer-content">
       <p class="copyright">All right Reserved<br>Happy Wafiqah Akmal</p>
       <div class="social-links">
-          <a href="#" class="social-link">GitHub</a>
-          <a href="#" class="social-link">Gmail</a>
-          <a href="#" class="social-link">Instagram</a>
+          <a href="https://github.com/happywafiqah" class="social-link">GitHub</a>
+          <a href="https://mail.google.com/mail/?view=cm&to=happywafiqah6@gmail.com" class="social-link">Gmail</a>
+          <a href="https://www.instagram.com/____happywfqah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a>
       </div>
   </div>
 </footer>

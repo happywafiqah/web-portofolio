@@ -17,7 +17,7 @@
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="portofolio.html">Portofolio</a>
+      <a href="portofolio.html">Portfolio</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html" class="active">Contact</a>
     </div>
@@ -42,53 +42,83 @@
                 <div class="contact-details">
                     <p><i class="fas fa-phone"></i> +62 882 4579 1511</p>
                     <p><i class="fas fa-envelope"></i> happywafiqah6@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 2 Langgau Street, Alley 2, Makassar, South Sulawesi 90200, Indonesia</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 2 Langgau Street, Alley 2 <br> Makassar, South Sulawesi 90200 <br>Indonesia</p>
                 </div>
             </div>
 
-            <div class="contact-form">
-                <form>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name" placeholder="Your First Name">
+           <div class="contact-form">
+    <form>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+            </div>
+        </div>
 
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" placeholder="Your Last Name">
+        <div class="form-row">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+    </form>
+</div>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email Address">
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-
-                    <label>What service are you interested in?</label>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="logo-design" name="service" value="logo-design">
-                        <label for="logo-design">Logo Design</label>
-                        <input type="checkbox" id="social-media" name="service" value="social-media">
-                        <label for="social-media">Social Media Content</label>
-                        <input type="checkbox" id="ui-design" name="service" value="ui-design">
-                        <label for="ui-design">UI Design</label>
-                        <input type="checkbox" id="unsure" name="service" value="unsure">
-                        <label for="unsure">I'm Not Sure Yet</label>
-                    </div>
+   <div class="form-group">
+    <label>What service are you interested in?</label>
+    <div class="checkbox-group">
+        <div class="checkbox-item">
+            <input type="checkbox" id="logo-design" name="service" value="logo-design">
+            <label for="logo-design">Logo Design</label>
+        </div>
+        <div class="checkbox-item">
+            <input type="checkbox" id="social-media" name="service" value="social-media">
+            <label for="social-media">Social Media Content</label>
+        </div>
+        <div class="checkbox-item">
+            <input type="checkbox" id="ui-design" name="service" value="ui-design">
+            <label for="ui-design">UI Design</label>
+        </div>
+        <div class="checkbox-item">
+            <input type="checkbox" id="unsure" name="service" value="unsure">
+            <label for="unsure">I'm Not Sure Yet</label>
+        </div>
+    </div>
+</div>
 
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Write your message.."></textarea>
 
-                    <button type="submit" class="submit-button">SEND MESSAGE</button>
+                    <div class="button-wrapper">
+  <button type="submit" class="submit-button">SEND MESSAGE</button>
+</div>
                 </form>
             </div>
         </div>
     </div>
 </section>
 
+<a id="top"></a>
+  <!-- Tombol scroll ke atas -->
+  <a href="contact.html" class="scroll-to-top" title="Kembali ke atas">↑</a>
+
+</body>
+</html>
+
 <footer class="footer">
   <div class="footer-content">
       <p class="copyright">All right Reserved<br>Happy Wafiqah Akmal</p>
       <div class="social-links">
-          <a href="#" class="social-link">GitHub</a>
-          <a href="#" class="social-link">Gmail</a>
-          <a href="#" class="social-link">Instagram</a>
+        <a href="https://github.com/happywafiqah" class="social-link">GitHub</a>
+        <a href="https://mail.google.com/mail/?view=cm&to=happywafiqah6@gmail.com" class="social-link">Gmail</a>
+        <a href="https://www.instagram.com/____happywfqah?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link">Instagram</a>
       </div>
   </div>
 </footer>
